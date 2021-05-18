@@ -1,0 +1,8 @@
+File: blog_submissions.php
+Page: /infusions/blog/blog_admin.php?aid=9aff5f0e48798f27§ion=submissions&submit_id=9
+Line: 132
+Error message: unserialize(): Error at offset 6 of 1323 bytes
+
+//$submit_criteria = unserialize($data['submit_criteria']);
+$submit_criteria = unserialize(stripslashes($data['submit_criteria']));
+
